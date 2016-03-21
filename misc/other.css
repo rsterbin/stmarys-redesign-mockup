@@ -1,0 +1,39 @@
+body {
+  background-color: #F4F1E1;
+}
+
+.outer-wrapper>.wrapper {
+  background: transparent url(https://static1.squarespace.com/static/56ed844ea3360c829bb8da2d/t/56ee1f6fd51cd44e943035d8/1458446191415/high_altar_header.jpg);
+}
+
+#header {
+  background: transparent url(https://static1.squarespace.com/static/56ed844ea3360c829bb8da2d/t/56ee1f6fd51cd44e943035d8/1458446191415/high_altar_header.jpg);
+}
+
+#header h1 a, #mobile-header h1 a {
+  color: white;
+  text-shadow: 0 0 5px black;
+  font-size: 1.5em;
+}
+
+.header-icons .icon-email:before {
+  color: white;
+  text-shadow: 0 0 2px black;
+}
+
+.header-icons .outer-wrapper .icon-menu:before,
+#mobile-header .icon-menu:before {
+  color: white;
+  text-shadow: 0 0 2px black;
+}
+
+.main-nav .nav-wrapper {
+  background: url(https://static1.squarespace.com/static/56ed844ea3360c829bb8da2d/t/56ee207e59827eaf2654c734/1458446462167/nav_bg_1x1.png) repeat;
+  border-top: 0.125em solid #F1DFC8;
+  border-bottom: 0.125em solid #F1DFC8;
+}
+
+.content-inner-wrapper {
+  background-color: white;
+}
+
