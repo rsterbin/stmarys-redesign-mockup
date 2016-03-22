@@ -19,7 +19,6 @@
         <link rel="icon" href="inc/site/images/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.0/foundation.min.css" />
         <link rel="stylesheet" href="inc/owl-carousel/owl.carousel.css" />
-        <link rel="stylesheet" href="inc/owl-carousel/owl.theme.css" />
         <link rel="stylesheet" href="inc/site/css/main.css" />
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script></script>
@@ -58,15 +57,31 @@
             <div class="column row collapse" id="main">
 
                 <div class="row" id="home-top">
-                    <div class="small-12 medium-7 large-8 columns">
-                        <div class="owl-carousel">
-                            <div class="fill-item"><img src="inc/site/images/home-slideshow/1.jpg" /></div>
-                            <div class="fill-item"><img src="inc/site/images/home-slideshow/2.jpg" /></div>
-                            <div class="fill-item"><img src="inc/site/images/home-slideshow/3.jpg" /></div>
-                            <div class="fill-item"><img src="inc/site/images/home-slideshow/4.jpg" /></div>
+                    <div class="small-12 large-8 columns">
+                        <div class="owl-carousel" id="homecarousel">
+                            <div class="fill-item">
+                                <img src="inc/site/images/home-slideshow/1.jpg" />
+                                <a href="#" class="caption">Around the Parish <button class="button hollow small caption-tag">About</button></a>
+                            </div>
+                            <div class="fill-item">
+                                <img src="inc/site/images/home-slideshow/2.jpg" />
+                                <a href="#" class="caption">Music at Saint Mary's <button class="button hollow small caption-tag">Music</button></a>
+                            </div>
+                            <div class="fill-item">
+                                <img src="inc/site/images/home-slideshow/3.jpg" />
+                                <a href="#" class="caption">Join the Flower Guild <button class="button hollow small caption-tag">Volunteer</button></a>
+                            </div>
+                            <div class="fill-item">
+                                <img src="inc/site/images/home-slideshow/4.jpg" />
+                                <a href="#" class="caption">Virtual Tour of the Building <button class="button hollow small caption-tag">History</button></a>
+                            </div>
+                            <div class="fill-item">
+                                <img src="inc/site/images/home-slideshow/5.jpg" />
+                                <a href="#" class="caption">Worship Schedule for Holy Week, 2016 <button class="button hollow small caption-tag">Worship</button></a>
+                            </div>
                         </div>
                     </div>
-                    <div class="small-12 medium-5 large-4 columns">
+                    <div class="small-12 large-4 columns">
                         <div id="home-angelus">
                             <h3>The Angelus</h3>
                             <p class="tagline">The Weekly Newsletter of Saint Mary's</p>
@@ -79,7 +94,7 @@
                 </div>
 
                 <div class="row" id="home-bottom">
-                    <div class="small-12 medium-6 large-7 columns">
+                    <div class="small-12 medium-5 large-7 columns" id="home-services">
                         <h3>Sunday of the Passion: Palm Sunday</h3>
 
                         <h4>Saturday, March 19, 2016</h4>
@@ -104,8 +119,10 @@
 
                         <p class="service">Solemn Evensong &amp; Benediction <span class="time">5:00 PM</span><br />
                         <span class="notes">Sermon by the Reverend Dr. James C. Pace</span></p>
+
+                        <h5>St. Mary's is open and the regular services of the church are offered daily.</h5>
                     </div>
-                    <div class="small-12 medium-6 large-5 columns">
+                    <div class="small-12 medium-7 large-5 columns">
                         <div class="row home-big-link">
                             <a href="#">
                                 <div class="small-5 columns">
@@ -131,14 +148,14 @@
                 </div>
             </div>
 
-            <div class="row top-footer">
+            <div class="row" id="top-footer">
                 <div class="small-12 columns">
                     <h5>The Church of Saint Mary the Virgin</h5>
                     <p class="tagline">145 West 46th Street &bull; New York City 10036-8502 &bull; 212.869.5830</p>
                 </div>
             </div>
 
-            <div class="row bottom-footer">
+            <div class="row" id="bottom-footer">
                 <div class="small-12 medium-7 columns social">
                     <ul>
                         <li class="facebook"><a href="#">Like Us</a></li>
@@ -154,9 +171,20 @@
             </div>
 
             <script>
+                function cropImages(id) {
+                    var $img = $('#' + id).find('.fill-item img');
+                }
                 $(document).foundation();
                 $(document).ready(function (){
-                    $(".owl-carousel").owlCarousel({ singleItem: true, autoPlay: true, navigation: true, pagination: false });
+                    $(".owl-carousel").owlCarousel({
+                        singleItem: true,
+                        autoPlay: true,
+                        navigation: true,
+                        navigationText: [ '&#x00ab;', '&#x00bb;' ],
+                        pagination: false,
+                        afterInit: function() { cropImages('homecarousel'); },
+                        afterUpdate: function() { cropImages('homecarousel'); }
+                    });
                 });
             </script>
         <div>

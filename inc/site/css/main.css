@@ -15,7 +15,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 #header {
-    background: url(../images/clergy2.jpg) no-repeat center 42%;
+    background: url(../images/arch.jpg) no-repeat center 42%;
     background-size: cover;
     text-align: center;
 }
@@ -91,10 +91,148 @@ h1,h2,h3,h4,h5,h6 {
     text-align: center;
 }
 
-#home-angelus .button {
+#main .button {
     color: #f6dda9;
     border-color: #484647;
     border-radius: 0.125em;
     background-color: #121e2c;
+}
+
+.fill-item {
+    overflow: hidden;
+}
+
+.fill-item {
+    max-height: 500px;
+    overflow: hidden; 
+    position: relative;
+}
+
+.fill-item img {
+    /* corrects inline gap in enclosing div */
+    display: block;
+    max-width: 100%;
+    /* just in case, to force correct aspect ratio */
+    height: auto !important;
+    width: auto\9; /* ie8+9 */
+    /* lt ie8 */
+    -ms-interpolation-mode: bicubic; 
+}
+
+.fill-item a.caption {
+    position: absolute;
+    bottom: 0.75em;
+    left: 3em;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 0.125em 0.125em 0.25em #000;
+}
+
+#main .button.caption-tag {
+    padding: 0.375em;
+    margin-left: 0.5em;
+    margin-top: 1.325em;
+}
+
+/* carousel theme */
+
+.owl-carousel {
+    position: relative;
+}
+
+.owl-wrapper-outer {
+    position: relative;
+}
+
+.owl-controls {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 1em;
+}
+
+.owl-controls .owl-prev,
+.owl-controls .owl-next {
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 0.125em 0.125em 0.25em #000;
+}
+
+.owl-controls .owl-prev {
+    float: left;
+}
+
+.owl-controls .owl-next {
+    float: right;
+}
+
+/* end carousel theme */
+
+
+#home-bottom {
+    background-color: #f6efcb;
+}
+
+#home-services {
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#home-services h3 {
+    font-weight: bold;
+    font-size: 1.875em;
+}
+
+.service .notes {
+    font-style: italic;
+    color: #333;
+}
+
+.no-service {
+    font-style: italic;
+    font-weight: bold;
+}
+
+#home-services h5 {
+    color: #a44339;
+}
+
+.home-big-link {
+    background-color: #dbc8a4;
+    margin-bottom: 0.125em;
+}
+
+.home-big-link a h3 {
+    margin-top: 0.75em;
+    font-size: 1.325em;
+    line-height: 1em;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.home-big-link a .tagline {
+    color: #000;
+}
+
+#top-footer {
+    background-color: #49545f;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0.025em 0.025em 0.125em #000;
+}
+
+#top-footer .columns {
+    padding: 1em;
+}
+
+#top-footer .columns .tagline {
+    margin-bottom: 0;
+}
+
+#top-footer h5 {
+    color: #fce5c0;
+    font-weight: bold;
 }
 
