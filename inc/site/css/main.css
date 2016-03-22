@@ -216,17 +216,35 @@ h1,h2,h3,h4,h5,h6 {
     padding-right: 0;
 }
 
+.home-big-link a {
+    color: #000;
+}
+
 .home-big-link a h3 {
     margin-top: 0.75em;
     font-size: 1.325em;
     line-height: 1em;
-    color: #000;
     font-weight: bold;
     text-transform: uppercase;
 }
 
-.home-big-link a .tagline {
-    color: #000;
+#home-bottom.rearranged,
+#home-services.rearranged,
+.home-big-link.rearranged {
+    background-color: #fff;
+}
+
+.home-big-link.rearranged {
+    border: none;
+    padding-top: 1em;
+}
+
+.home-big-link.rearranged .text {
+    padding: 0 1em;
+}
+
+.home-big-link.rearranged .image {
+    padding-right: 0.9375rem;
 }
 
 #top-footer {
