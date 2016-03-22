@@ -123,7 +123,7 @@
 
                         <h5>St. Mary's is open and the regular services of the church are offered daily.</h5>
                     </div>
-                    <div class="small-12 medium-7 large-5 columns">
+                    <div class="small-12 medium-7 large-5 columns" id="home-big-links">
                         <div class="row home-big-link">
                             <a href="#">
                                 <div class="small-5 columns text">
@@ -145,7 +145,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="row home-big-link">
+                        <div class="row home-big-link last">
                             <a href="#">
                                 <div class="small-5 columns text">
                                     <h3>Some Other Link</h3>
@@ -197,6 +197,13 @@
                         afterInit: function() { cropImages('homecarousel'); },
                         afterUpdate: function() { cropImages('homecarousel'); }
                     });
+                    var $s = $('#home-services');
+                    var $l = $('#home-big-links');
+                    if ($s.height() > $l.height()) {
+                        $l.css('height', $s.height() + 'px');
+                    } else {
+                        $s.css('height', $l.height() + 'px');
+                    }
                 });
             </script>
         <div>

@@ -207,6 +207,10 @@ h1,h2,h3,h4,h5,h6 {
     border-bottom: 0.125em solid #f6efcb;
 }
 
+.home-big-link.last {
+    border-bottom: none;
+}
+
 .home-big-link .image {
     padding-right: 0;
 }
