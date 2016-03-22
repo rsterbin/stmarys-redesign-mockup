@@ -74,6 +74,10 @@ h1,h2,h3,h4,h5,h6 {
     padding: 1em;
 }
 
+#home-angelus.without-box {
+    background-color: transparent;
+}
+
 #home-angelus h3 {
     color: #f6dda9;
     text-transform: uppercase;
