@@ -19,6 +19,7 @@
         <link rel="icon" href="inc/site/images/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.0/foundation.min.css" />
         <link rel="stylesheet" href="inc/owl-carousel/owl.carousel.css" />
+        <link rel="stylesheet" href="inc/font-awesome-4.5.0/css/font-awesome.min.css" />
         <link rel="stylesheet" href="inc/site/css/main.css" />
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script></script>
@@ -157,15 +158,16 @@
 
             <div class="row" id="bottom-footer">
                 <div class="small-12 medium-7 columns social">
-                    <ul>
-                        <li class="facebook"><a href="#">Like Us</a></li>
-                        <li class="twitter"><a href="#">Follow Us</a></li>
-                        <li class="instagram"><a href="#">See Us</a></li>
+                    <ul class="menu vertical medium-horizontal">
+                        <li class="facebook"><a href="#"><i class="fa fa-facebook-f"></i> Like Us</a></li>
+                        <li class="twitter"><a href="#"><i class="fa fa-twitter"></i> Follow Us</a></li>
+                        <li class="instagram"><a href="#"><i class="fa fa-instagram"></i> See Us</a></li>
                     </ul>
                 </div>
                 <div class="small-12 medium-5 columns search">
                     <form method="post" action="#">
-                        <input type="text" name="q" />
+                        <label class="icon-only" for="searchbox"><i class="fa fa-search" title="Search"></i></label>
+                        <input type="text" name="q" id="searchbox" />
                     </form>
                 </div>
             </div>

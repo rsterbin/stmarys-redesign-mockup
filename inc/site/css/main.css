@@ -55,6 +55,10 @@ h1,h2,h3,h4,h5,h6 {
     text-transform: uppercase;
 }
 
+#header #nav ul.menu li a:hover {
+    color: #fce5c0;
+}
+
 #main {
     background: #fff;
 }
@@ -170,10 +174,11 @@ h1,h2,h3,h4,h5,h6 {
 
 
 #home-bottom {
-    background-color: #f6efcb;
+    background-color: #dbc8a4;
 }
 
 #home-services {
+    background-color: #f6efcb;
     text-align: center;
     padding-top: 1em;
     padding-bottom: 1em;
@@ -200,7 +205,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .home-big-link {
     background-color: #dbc8a4;
-    margin-bottom: 0.125em;
+    border-bottom: 0.125em solid #f6efcb;
 }
 
 .home-big-link a h3 {
@@ -234,5 +239,41 @@ h1,h2,h3,h4,h5,h6 {
 #top-footer h5 {
     color: #fce5c0;
     font-weight: bold;
+}
+
+#bottom-footer {
+    border-top: 0.125em solid #cabfae;
+    background: #597084;
+}
+
+#bottom-footer .social a {
+    color: #fff;
+}
+
+#bottom-footer .social a:hover {
+    color: #fce5c0;
+}
+
+#bottom-footer .search label {
+    display: inline;
+    color: #fff;
+    font-size: 1.25em;
+    line-height: 1em;
+    padding-right: 0.5em;
+}
+
+#bottom-footer .search {
+    text-align: right;
+    padding: 0.5em;
+}
+
+#bottom-footer .search input {
+    display: inline;
+    width: auto;
+    height: auto;
+    font-size: 0.875em;
+    border-radius: 0.125em;
+    color: #777;
+    margin-bottom: 0;
 }
 
