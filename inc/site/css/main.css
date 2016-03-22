@@ -70,12 +70,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 #home-angelus {
-    background-color: #101922;
     padding: 1em;
-}
-
-#home-angelus.without-box {
-    background-color: transparent;
 }
 
 #home-angelus h3 {
