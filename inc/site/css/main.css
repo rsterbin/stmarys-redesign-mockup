@@ -208,6 +208,10 @@ h1,h2,h3,h4,h5,h6 {
     border-bottom: 0.125em solid #f6efcb;
 }
 
+.home-big-link .image {
+    padding-right: 0;
+}
+
 .home-big-link a h3 {
     margin-top: 0.75em;
     font-size: 1.325em;
