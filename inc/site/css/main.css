@@ -206,7 +206,11 @@ h1,h2,h3,h4,h5,h6 {
 
 
 #home-bottom {
-    background-color: #dbc8a4;
+    background: #dbc8a4;
+}
+
+#home-bottom.with-focus {
+    background: #fff7d8 url("../images/bottom-box-bg.jpg") no-repeat scroll right bottom;
 }
 
 #home-services {
@@ -258,6 +262,19 @@ h1,h2,h3,h4,h5,h6 {
     line-height: 1em;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+.focus {
+    font-style: italic;
+}
+
+.focus .columns {
+    padding-top: 2em;
+    padding-left: 1.5em;
+}
+
+.focus .columns p span {
+    font-size: 1.25em;
 }
 
 #home-bottom.rearranged,
