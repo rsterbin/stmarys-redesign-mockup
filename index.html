@@ -29,23 +29,13 @@
         <title>The Church of Saint Mary the Virgin, Times Square</title>
     </head>
     <body>
-        <div class="wrapper">
-
-            <div class="row collapse" id="header">
-                <div class="small-12 columns" id="titlebar">
-                    <h1>Saint Mary the Virgin, Times Square</h1>
-                    <h2>The Episcopal Church Welcomes You</h2>
-                    <div data-responsive-toggle="nav" data-hide-for="medium">
-                        <button class="menu-icon" type="button" data-toggle></button>
-                        <div class="title-bar-title">Menu</div>
-                    </div>
-                </div>
-
-                <div class="small-12 columns menu-centered" id="nav">
-                    <ul class="menu vertical medium-horizontal dropdown" data-dropdown-menu>
+        <div class="off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+                <div class="off-canvas position-left" id="off_canvas_left" data-off-canvas>
+                    <ul class="menu vertical accordion" data-accordion-menu>
                         <li>
                             <a href="#">About</a>
-                            <ul class="menu">
+                            <ul class="menu vertical">
                                 <li><a href="#">Directions &amp; Visitor Information</a></li>
                                 <li><a href="#">Mission &amp; Outreach</a></li>
                                 <li><a href="#">The Angelus: Our Newsletter</a></li>
@@ -55,14 +45,14 @@
                         </li>
                         <li>
                             <a href="#">Worship</a>
-                            <ul class="menu">
+                            <ul class="menu vertical">
                                 <li><a href="#">Sermons</a></li>
                                 <li><a href="#">Bible Lessons for All Services</a></li>
                             </ul>
                         </li>
                         <li>
                             <a href="#">Music</a>
-                            <ul class="menu">
+                            <ul class="menu vertical">
                                 <li><a href="#">Liturgical Music List</a></li>
                                 <li><a href="#">Organ Recital Schedule</a></li>
                                 <li><a href="#">Concert Schedule</a></li>
@@ -71,7 +61,7 @@
                         </li>
                         <li>
                             <a href="#">Calendar</a>
-                            <ul class="menu">
+                            <ul class="menu vertical">
                                 <li><a href="#">Worship Schedule</a></li>
                                 <li><a href="#">Bible Study &amp; Classes</a></li>
                                 <li><a href="#">Parish Events</a></li>
@@ -79,7 +69,7 @@
                         </li>
                         <li>
                             <a href="#">Clergy &amp; Staff</a>
-                            <ul class="menu">
+                            <ul class="menu vertical">
                                 <li><a href="#">Music Department</a></li>
                                 <li><a href="#">Sisters at Saint Mary’s</a></li>
                                 <li><a href="#">Information Request Form</a></li>
@@ -88,7 +78,7 @@
                         <li><a href="#">Giving</a></li>
                         <li>
                             <a href="#">History</a>
-                            <ul class="menu">
+                            <ul class="menu vertical">
                                 <li><a href="#">Historical Photos</a></li>
                                 <li><a href="#">Parish Archives</a></li>
                                 <li><a href="#">The Arrow Archives</a></li>
@@ -99,153 +89,231 @@
                         <li><a href="#">Gallery</a></li>
                     </ul>
                 </div>
-            </div>
 
-            <div class="column row collapse" id="main">
+                <div class="off-canvas-content" data-off-canvas-content>
+                    <div id="site">
 
-                <div class="row" id="home-top">
-                    <div class="small-12 large-8 columns">
-                        <div class="owl-carousel" id="homecarousel">
-                            <div class="fill-item" style="background-image: url(inc/site/images/home-slideshow/1.jpg)">
-                                <a href="#" class="caption">Around the Parish <button class="button hollow small caption-tag">About</button></a>
+                        <div class="row collapse" id="header">
+                            <div class="small-12 columns" id="titlebar">
+                                <div class="toggle-menu hide-for-medium" data-toggle="off_canvas_left">
+                                    <button class="menu-icon" type="button" data-toggle></button>
+                                    <div class="title-bar-title">Menu</div>
+                                </div>
+
+                                <h1>Saint Mary the Virgin, Times Square</h1>
+                                <h2>The Episcopal Church Welcomes You</h2>
                             </div>
-                            <div class="fill-item" style="background-image: url(inc/site/images/home-slideshow/2.jpg)">
-                                <a href="#" class="caption">Music at Saint Mary's <button class="button hollow small caption-tag">Music</button></a>
-                            </div>
-                            <div class="fill-item" style="background-image: url(inc/site/images/home-slideshow/3.jpg)">
-                                <a href="#" class="caption">Join the Flower Guild <button class="button hollow small caption-tag">Volunteer</button></a>
-                            </div>
-                            <div class="fill-item" style="background-image: url(inc/site/images/home-slideshow/4.jpg)">
-                                <a href="#" class="caption">Virtual Tour of the Building <button class="button hollow small caption-tag">History</button></a>
-                            </div>
-                            <div class="fill-item" style="background-image: url(inc/site/images/home-slideshow/5.jpg)">
-                                <a href="#" class="caption">Worship Schedule for Holy Week, 2016 <button class="button hollow small caption-tag">Worship</button></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="small-12 large-4 columns">
-                        <div id="home-angelus">
-                            <h3>The Angelus</h3>
-                            <p class="tagline">The Weekly Newsletter of Saint Mary's</p>
-                            <h4>Volume 18, Number 17, March 13, 2016</h4>
-                            <p><strong>FROM THE RECTOR: HOLY WEEK 2016</strong></p>
-                            <p>Only once in the seventeen years I have been at Saint Mary’s have we been unable to process through Times Square on Palm Sunday. The usual worry is rain. This year, as I write on Friday, March 18, snow is forecast for the afternoon and evening. I have a hunch that it will be all right—and a memorable start to Holy Week. The focus of our worship on Sunday, of course, is not the Liturgy of the Palms. It’s the Eucharist and the proclamation of the passion, this year, from Luke.</p>
-                            <div class="read-more"><a class="button hollow" href="#">Read More</a></div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="row" data-equalizer data-equalize-on="medium" id="home-bottom">
-                    <div class="small-12 medium-5 large-7 columns" id="home-services">
-                        <div data-equalizer-watch>
-                            <h3>Sunday of the Passion: Palm Sunday</h3>
-
-                            <h4>Saturday, March 19, 2016</h4>
-
-                            <p class="service">Liturgy of the Palms &amp; Sung Mass <span class="time">5:00 PM</span><br />
-                            <span class="notes">Sermon by the Reverend Stephen Gerth</span></p>
-
-                            <h4>Sunday, March 20, 2016</h4>
-
-                            <p class="service">Sung Matins <span class="time">8:30 AM</span></p>
-                             
-
-                            <p class="service">Liturgy of the Palms &amp; Mass <span class="time">9:00 AM</span><br />
-                            <span class="notes">Sermon by the Reverend Stephen Gerth</span></p>
-
-                            <p class="no-service">There is no celebration of the Mass at 10:00 AM today.</p>
-
-                            <p class="service">Liturgy of the Palms, Procession through Times Square &amp; Solemn Mass <span class="time">11:00 AM</span><br />
-                            <span class="notes">Sermon by the Reverend Stephen Gerth</span><br />
-                            <span class="notes">Missa in die Tribulationis &mdash; Robinson (1943–2015)</span><br />
-                            <span class="notes">Hosanna to the Son of David &mdash; Weelkes (1576–1623)</span></p>
-
-                            <p class="service">Solemn Evensong &amp; Benediction <span class="time">5:00 PM</span><br />
-                            <span class="notes">Sermon by the Reverend Dr. James C. Pace</span></p>
-
-                            <h5>St. Mary's is open and the regular services of the church are offered daily.</h5>
-                        </div>
-                    </div>
-                    <div class="small-12 medium-7 large-5 columns" id="home-big-links">
-                        <div data-equalizer-watch>
-                            <div class="row home-big-link">
-                                <a href="#">
-                                    <div class="small-5 columns text">
-                                        <h3>Upcoming Events</h3>
-                                    </div>
-                                    <div class="small-7 columns image">
-                                        <img src="inc/site/images/easter.jpg" />
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="row home-big-link">
-                                <a href="#">
-                                    <div class="small-5 columns text">
-                                        <h3>Open Doors</h3>
-                                        <p class="tagline">The Campaign for the Church of Saint Mary the Virgin</p>
-                                    </div>
-                                    <div class="small-7 columns image">
-                                        <img src="inc/site/images/christ_the_king.jpg" />
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="row home-big-link last">
-                                <a href="#">
-                                    <div class="small-5 columns text">
-                                        <h3>Some Other Link</h3>
-                                    </div>
-                                    <div class="small-7 columns image">
-                                        <img src="inc/site/images/home-slideshow/5.jpg" />
-                                    </div>
-                                </a>
+                            <div class="small-12 columns menu-centered show-for-medium" id="nav">
+                                <ul class="menu vertical medium-horizontal dropdown" data-dropdown-menu>
+                                    <li>
+                                        <a href="#">About</a>
+                                        <ul class="menu">
+                                            <li><a href="#">Directions &amp; Visitor Information</a></li>
+                                            <li><a href="#">Mission &amp; Outreach</a></li>
+                                            <li><a href="#">The Angelus: Our Newsletter</a></li>
+                                            <li><a href="#">Children at Saint Mary’s</a></li>
+                                            <li><a href="#">Weddings, Baptisms, &amp; Funerals</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Worship</a>
+                                        <ul class="menu">
+                                            <li><a href="#">Sermons</a></li>
+                                            <li><a href="#">Bible Lessons for All Services</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Music</a>
+                                        <ul class="menu">
+                                            <li><a href="#">Liturgical Music List</a></li>
+                                            <li><a href="#">Organ Recital Schedule</a></li>
+                                            <li><a href="#">Concert Schedule</a></li>
+                                            <li><a href="#">Our Organ</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Calendar</a>
+                                        <ul class="menu">
+                                            <li><a href="#">Worship Schedule</a></li>
+                                            <li><a href="#">Bible Study &amp; Classes</a></li>
+                                            <li><a href="#">Parish Events</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Clergy &amp; Staff</a>
+                                        <ul class="menu">
+                                            <li><a href="#">Music Department</a></li>
+                                            <li><a href="#">Sisters at Saint Mary’s</a></li>
+                                            <li><a href="#">Information Request Form</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Giving</a></li>
+                                    <li>
+                                        <a href="#">History</a>
+                                        <ul class="menu">
+                                            <li><a href="#">Historical Photos</a></li>
+                                            <li><a href="#">Parish Archives</a></li>
+                                            <li><a href="#">The Arrow Archives</a></li>
+                                            <li><a href="#">Annual Reports</a></li>
+                                            <li><a href="#">Parish Histories</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Gallery</a></li>
+                                </ul>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="row" id="top-footer">
-                <div class="small-12 columns">
-                    <h5>The Church of Saint Mary the Virgin</h5>
-                    <p class="tagline">145 West 46th Street &bull; New York City 10036-8502 &bull; 212.869.5830</p>
-                </div>
-            </div>
+                        <div class="column row collapse" id="main">
 
-            <div class="row" id="bottom-footer">
-                <div class="small-12 medium-7 columns social">
-                    <ul class="menu vertical medium-horizontal">
-                        <li class="facebook"><a href="#"><i class="fa fa-facebook-f"></i> Like Us</a></li>
-                        <li class="twitter"><a href="#"><i class="fa fa-twitter"></i> Follow Us</a></li>
-                        <li class="instagram"><a href="#"><i class="fa fa-instagram"></i> See Us</a></li>
-                    </ul>
-                </div>
-                <div class="small-12 medium-5 columns search">
-                    <form method="post" action="#">
-                        <label class="icon-only" for="searchbox"><i class="fa fa-search" title="Search"></i></label>
-                        <input type="text" name="q" id="searchbox" />
-                    </form>
-                </div>
-            </div>
+                            <div class="row" id="home-top">
+                                <div class="small-12 large-8 columns">
+                                    <div class="owl-carousel" id="homecarousel">
+                                        <div class="fill-item" style="background-image: url(inc/site/images/home-slideshow/1.jpg)">
+                                            <a href="#" class="caption">Around the Parish <button class="button hollow small caption-tag">About</button></a>
+                                        </div>
+                                        <div class="fill-item" style="background-image: url(inc/site/images/home-slideshow/2.jpg)">
+                                            <a href="#" class="caption">Music at Saint Mary's <button class="button hollow small caption-tag">Music</button></a>
+                                        </div>
+                                        <div class="fill-item" style="background-image: url(inc/site/images/home-slideshow/3.jpg)">
+                                            <a href="#" class="caption">Join the Flower Guild <button class="button hollow small caption-tag">Volunteer</button></a>
+                                        </div>
+                                        <div class="fill-item" style="background-image: url(inc/site/images/home-slideshow/4.jpg)">
+                                            <a href="#" class="caption">Virtual Tour of the Building <button class="button hollow small caption-tag">History</button></a>
+                                        </div>
+                                        <div class="fill-item" style="background-image: url(inc/site/images/home-slideshow/5.jpg)">
+                                            <a href="#" class="caption">Worship Schedule for Holy Week, 2016 <button class="button hollow small caption-tag">Worship</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="small-12 large-4 columns">
+                                    <div id="home-angelus">
+                                        <h3>The Angelus</h3>
+                                        <p class="tagline">The Weekly Newsletter of Saint Mary's</p>
+                                        <h4>Volume 18, Number 17, March 13, 2016</h4>
+                                        <p><strong>FROM THE RECTOR: HOLY WEEK 2016</strong></p>
+                                        <p>Only once in the seventeen years I have been at Saint Mary’s have we been unable to process through Times Square on Palm Sunday. The usual worry is rain. This year, as I write on Friday, March 18, snow is forecast for the afternoon and evening. I have a hunch that it will be all right—and a memorable start to Holy Week. The focus of our worship on Sunday, of course, is not the Liturgy of the Palms. It’s the Eucharist and the proclamation of the passion, this year, from Luke.</p>
+                                        <div class="read-more"><a class="button hollow" href="#">Read More</a></div>
+                                    </div>
+                                </div>
+                            </div>
 
-            <script>
-                function cropImages(id) {
-                    var width  = $('#' + id).width(),
-                        height = width * 0.75;
-                    $('#' + id + ' .fill-item').css('height', height + 'px');
-                }
-                $(document).foundation();
-                $(document).ready(function (){
-                    $(".owl-carousel").owlCarousel({
-                        singleItem: true,
-                        autoPlay: true,
-                        navigation: true,
-                        navigationText: [ '&#x00ab;', '&#x00bb;' ],
-                        pagination: false,
-                        afterInit: function() { cropImages('homecarousel'); },
-                        afterUpdate: function() { cropImages('homecarousel'); }
-                    });
+                            <div class="row" data-equalizer data-equalize-on="medium" id="home-bottom">
+                                <div class="small-12 medium-5 large-7 columns" id="home-services">
+                                    <div data-equalizer-watch>
+                                        <h3>Sunday of the Passion: Palm Sunday</h3>
+
+                                        <h4>Saturday, March 19, 2016</h4>
+
+                                        <p class="service">Liturgy of the Palms &amp; Sung Mass <span class="time">5:00 PM</span><br />
+                                        <span class="notes">Sermon by the Reverend Stephen Gerth</span></p>
+
+                                        <h4>Sunday, March 20, 2016</h4>
+
+                                        <p class="service">Sung Matins <span class="time">8:30 AM</span></p>
+                                         
+
+                                        <p class="service">Liturgy of the Palms &amp; Mass <span class="time">9:00 AM</span><br />
+                                        <span class="notes">Sermon by the Reverend Stephen Gerth</span></p>
+
+                                        <p class="no-service">There is no celebration of the Mass at 10:00 AM today.</p>
+
+                                        <p class="service">Liturgy of the Palms, Procession through Times Square &amp; Solemn Mass <span class="time">11:00 AM</span><br />
+                                        <span class="notes">Sermon by the Reverend Stephen Gerth</span><br />
+                                        <span class="notes">Missa in die Tribulationis &mdash; Robinson (1943–2015)</span><br />
+                                        <span class="notes">Hosanna to the Son of David &mdash; Weelkes (1576–1623)</span></p>
+
+                                        <p class="service">Solemn Evensong &amp; Benediction <span class="time">5:00 PM</span><br />
+                                        <span class="notes">Sermon by the Reverend Dr. James C. Pace</span></p>
+
+                                        <h5>St. Mary's is open and the regular services of the church are offered daily.</h5>
+                                    </div>
+                                </div>
+                                <div class="small-12 medium-7 large-5 columns" id="home-big-links">
+                                    <div data-equalizer-watch>
+                                        <div class="row home-big-link">
+                                            <a href="#">
+                                                <div class="small-5 columns text">
+                                                    <h3>Upcoming Events</h3>
+                                                </div>
+                                                <div class="small-7 columns image">
+                                                    <img src="inc/site/images/easter.jpg" />
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="row home-big-link">
+                                            <a href="#">
+                                                <div class="small-5 columns text">
+                                                    <h3>Open Doors</h3>
+                                                    <p class="tagline">The Campaign for the Church of Saint Mary the Virgin</p>
+                                                </div>
+                                                <div class="small-7 columns image">
+                                                    <img src="inc/site/images/christ_the_king.jpg" />
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="row home-big-link last">
+                                            <a href="#">
+                                                <div class="small-5 columns text">
+                                                    <h3>Some Other Link</h3>
+                                                </div>
+                                                <div class="small-7 columns image">
+                                                    <img src="inc/site/images/home-slideshow/5.jpg" />
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" id="top-footer">
+                            <div class="small-12 columns">
+                                <h5>The Church of Saint Mary the Virgin</h5>
+                                <p class="tagline">145 West 46th Street &bull; New York City 10036-8502 &bull; 212.869.5830</p>
+                            </div>
+                        </div>
+
+                        <div class="row" id="bottom-footer">
+                            <div class="small-12 medium-7 columns social">
+                                <ul class="menu vertical medium-horizontal">
+                                    <li class="facebook"><a href="#"><i class="fa fa-facebook-f"></i> Like Us</a></li>
+                                    <li class="twitter"><a href="#"><i class="fa fa-twitter"></i> Follow Us</a></li>
+                                    <li class="instagram"><a href="#"><i class="fa fa-instagram"></i> See Us</a></li>
+                                </ul>
+                            </div>
+                            <div class="small-12 medium-5 columns search">
+                                <form method="post" action="#">
+                                    <label class="icon-only" for="searchbox"><i class="fa fa-search" title="Search"></i></label>
+                                    <input type="text" name="q" id="searchbox" />
+                                </form>
+                            </div>
+                        </div>
+
+                    </div><!-- end site -->
+                </div><!-- end off-canvas-content -->
+            </div><!-- end off-canvas-wrapper-inner -->
+        </div><!-- end off-canvas-wrapper -->
+
+        <script>
+            function cropImages(id) {
+                var width  = $('#' + id).width(),
+                    height = width * 0.75;
+                $('#' + id + ' .fill-item').css('height', height + 'px');
+            }
+            $(document).foundation();
+            $(document).ready(function (){
+                $(".owl-carousel").owlCarousel({
+                    singleItem: true,
+                    autoPlay: true,
+                    navigation: true,
+                    navigationText: [ '&#x00ab;', '&#x00bb;' ],
+                    pagination: false,
+                    afterInit: function() { cropImages('homecarousel'); },
+                    afterUpdate: function() { cropImages('homecarousel'); }
                 });
-            </script>
-        <div>
+            });
+        </script>
+
     </body>
 </html>
