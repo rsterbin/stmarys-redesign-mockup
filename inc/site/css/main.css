@@ -244,24 +244,31 @@ body.default-interior #main {
     color: #a44339;
 }
 
-.home-big-link {
+#main .home-big-link {
     background-color: #dbc8a4;
     border-bottom: 0.125em solid #f6efcb;
 }
 
-.home-big-link.last {
+#main .home-big-link.last {
     border-bottom: none;
 }
 
-.home-big-link .image {
+#main .home-big-link .image {
     padding-right: 0;
 }
 
-.home-big-link a {
+#main .home-big-link a:link,
+#main .home-big-link a:visited {
     color: #000;
 }
 
-.home-big-link a h3 {
+#main .home-big-link a:focus,
+#main .home-big-link a:hover,
+#main .home-big-link a:active {
+    color: #352e28;
+}
+
+#main .home-big-link a h3 {
     margin-top: 0.75em;
     font-size: 1.325em;
     line-height: 1em;
@@ -397,6 +404,10 @@ body.default-interior #main {
 #main .clergy .clergy-staff-bio,
 #main .clergy .clergy-staff-title {
     margin-bottom: 0.25em;
+}
+
+#main .clergy-large .email {
+    margin-top: 0.5em;
 }
 
 #main .clergy strong.clergy-name {
