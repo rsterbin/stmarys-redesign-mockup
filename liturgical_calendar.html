@@ -28,28 +28,28 @@
 
 <style>
 
-.calendar-nav {
+.liturgical-calendar-nav {
     margin-bottom: 1em;
     font-size: 1.25em;
     font-style: italic;
     color: #49545f;
 }
 
-#main .calendar-nav a,
-#main .calendar-nav a:hover {
+#main .liturgical-calendar-nav a,
+#main .liturgical-calendar-nav a:hover {
     color: #49545f;
 }
 
-.calendar-nav .prev {
+.liturgical-calendar-nav .prev {
     text-align: right;
     margin-top: 0.25em;
 }
 
-.calendar-nav .current {
+.liturgical-calendar-nav .current {
     text-align: center;
 }
 
-.calendar-nav .next {
+.liturgical-calendar-nav .next {
     text-align: left;
     margin-top: 0.25em;
 }
@@ -62,12 +62,12 @@
 }
 
 @media screen and (max-width: 39.9375em) {
-    .calendar-date {
+    .lcal-month-day .calendar-date {
         padding: 0.5em 0;
     }
 }
 
-.number.badge {
+.lcal-month-day .number.badge {
     font-size: 0.8em;
     background-color: #121e2c;
     border-color: #484647;
@@ -76,7 +76,7 @@
     margin-bottom: 0.25em;
 }
 
-.weekday {
+.lcal-month-day .weekday {
     font-style: italic;
     opacity: 0.7;
     padding-left: 0.25em;
@@ -84,60 +84,60 @@
 }
 
 @media screen and (min-width: 40em) {
-    .weekday {
+    .lcal-month-day .weekday {
         display: block;
         padding-left: 0;
     }
 }
 
-.service {
+.lcal-month-day .service {
     background: transparent url("inc/site/images/liturgical-colors/white1.png") repeat-y scroll 0 0;
     padding: 1em 0 0 2.75em;
 }
 
-.service.color-gold {
+.lcal-month-day .service.color-gold {
     background-image: url("inc/site/images/liturgical-colors/gold1.png");
 }
 
-.service.color-purple {
+.lcal-month-day .service.color-purple {
     background-image: url("inc/site/images/liturgical-colors/purple1.png");
 }
 
-.service.color-blue {
+.lcal-month-day .service.color-blue {
     background-image: url("inc/site/images/liturgical-colors/blue1.png");
 }
 
-.service.color-red {
+.lcal-month-day .service.color-red {
     background-image: url("inc/site/images/liturgical-colors/red1.png");
 }
 
-.service.color-rose {
+.lcal-month-day .service.color-rose {
     background-image: url("inc/site/images/liturgical-colors/rose1.png");
 }
 
-.service.color-black {
+.lcal-month-day .service.color-black {
     background-image: url("inc/site/images/liturgical-colors/black1.png");
 }
 
-.service.color-white {
+.lcal-month-day .service.color-white {
     background-image: url("inc/site/images/liturgical-colors/white1.png");
 }
 
-.service.color-green {
+.lcal-month-day .service.color-green {
     background-image: url("inc/site/images/liturgical-colors/green1.png");
 }
 
-.service + .service {
+.lcal-month-day .service + .service {
     margin-top: 0.5em;
 }
 
-.service .title {
+.lcal-month-day .service .title {
     font-weight: bold;
     font-variant: small-caps;
     font-size: 1.111em;
 }
 
-.service .excerpt p {
+.lcal-month-day .service .excerpt p {
     font-style: italic;
     opacity: 0.8;
 }
@@ -288,7 +288,7 @@
                                 <h3>Monthly Worship Schedule: March 2016</h3>
                             </div>
 
-                            <div class="row calendar-nav">
+                            <div class="row liturgical-calendar-nav">
                                 <div class="small-4 large-5 columns prev">
                                     <a href="#" title="Previous Month"><i class="fa fa-chevron-left"></i></a>
                                 </div>
