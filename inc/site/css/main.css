@@ -112,37 +112,6 @@ body.default-interior #main {
     background: #f3ecc9;
 }
 
-#home-top {
-    padding: 1em 0;
-    background-color: #2c4561;
-    color: #fff;
-}
-
-#home-angelus {
-    padding: 1em;
-}
-
-#home-angelus h3 {
-    color: #f6dda9;
-    text-transform: uppercase;
-    font-size: 1.25em;
-    font-weight: bold;
-    margin-bottom: 0;
-}
-
-#home-angelus p.tagline {
-    font-weight: bold;
-    font-size: 1.125em;
-}
-
-#home-angelus h4 {
-    font-size: 1.125em;
-}
-
-#home-angelus .read-more {
-    text-align: center;
-}
-
 #main .button {
     color: #f6dda9;
     border-color: #484647;
@@ -213,21 +182,63 @@ body.default-interior #main {
 
 /* end carousel theme */
 
+#home-top {
+    padding: 1em 0;
+    background-color: #2c4561;
+    color: #fff;
+}
 
 #home-bottom {
     background: #fff7d8 url("../images/bottom-box-bg.jpg") no-repeat scroll right bottom;
 }
 
+@media screen and (min-width: 40em) {
+    #home-services {
+        padding-right: 0.5em;
+    }
+    #home-sidebar {
+        padding-left: 0.5em;
+    }
+    #home-bottom .wrap .title {
+        min-height: 4em;
+    }
+}
+
+#home-bottom .wrap .title {
+    padding: 0 1em;
+}
+
 #home-services {
-    background-color: #f6efcb;
-    text-align: center;
     padding-top: 1em;
     padding-bottom: 1em;
+}
+
+#home-services .wrap {
+    background-color: #2e486d;
+    color: #fff;
+    padding: 0.5em 0 0 0;
+}
+
+#home-services .wrap h2 {
+    margin: 0;
+    color: #fff;
+    text-shadow: none;
+    text-align: left;
+}
+
+#home-services .inner {
+    background-color: #4a6e92;
+    padding: 1em;
+    margin-bottom: 1em;
 }
 
 #home-services h3 {
     font-weight: bold;
     font-size: 1.875em;
+}
+
+#home-services .inner .service .notes {
+    color: #fff;
 }
 
 .service .notes {
@@ -242,6 +253,50 @@ body.default-interior #main {
 
 #home-services h5 {
     color: #a44339;
+    text-align: center;
+}
+
+#home-angelus {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#home-angelus .wrap {
+    background-color: #434037;
+    color: #fff;
+    padding: 0.5em 0 0 0;
+}
+
+#home-angelus .wrap h2 {
+    margin: 0;
+    color: #fadcaa;
+    text-shadow: none;
+    text-align: left;
+}
+
+#home-angelus .wrap p.tagline {
+    font-weight: bold;
+    font-size: 1.125em;
+    margin: 0;
+    margin-top: -0.5em;
+}
+
+#home-angelus .inner {
+    background-color: #6e6b58;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+#home-angelus h4 {
+    font-size: 1.125em;
+}
+
+#main #home-angelus a, #main #home-angelus a:hover {
+    color: #fff;
+}
+
+#home-angelus .read-more {
+    font-weight: bold;
 }
 
 #main .home-big-link {
@@ -281,8 +336,8 @@ body.default-interior #main {
 }
 
 .focus .columns {
-    padding-top: 2em;
-    padding-left: 1.5em;
+    padding-top: 1em;
+    padding-left: 1em;
 }
 
 .focus .columns p span {
