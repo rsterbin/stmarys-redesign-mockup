@@ -569,7 +569,7 @@ body.dark-interior #main h3 {
     position: relative;
     overflow: hidden;
     height: 8em;
-    padding: 3.5em 1em 1em 1em;
+    padding: 4.5em 1em 1em 1em;
     z-index: 5;
 }
 
@@ -610,11 +610,6 @@ body.dark-interior #main h3 {
     margin: 0;
 }
 
-#home-bottom.trial #home-angelus .angelus-title p.tagline {
-    color: white;
-    text-shadow: 0.125em 0.125em 0.25em #000;
-}
-
 #home-bottom.trial #home-services .services-body,
 #home-bottom.trial #home-angelus .angelus-body {
     padding: 1em;
@@ -627,6 +622,8 @@ body.dark-interior #main h3 {
 #home-bottom.trial #home-angelus .signup {
     margin-top: 1.5em;
     text-align: center;
+    border-top: 0.025em dotted #ccc;
+    padding-top: 1em;
 }
 
 #home-bottom.trial #home-angelus .signup h5 {
@@ -638,14 +635,14 @@ body.dark-interior #main h3 {
     width: auto;
 }
 
-#home-bottom.trial #home-angelus .signup button {
-    margin: 0;
+#home-bottom.trial #home-angelus .signup .button {
     background-color: #434037;
 }
 
 #home-bottom.trial .home-big-link {
     background: #3f5a7f;
     color: #fff;
+    min-height: 8em;
 }
 
 #home-bottom.trial .home-big-link a {
@@ -654,5 +651,12 @@ body.dark-interior #main h3 {
 
 #home-bottom.trial .home-big-link a h3 {
     font-size: 1.5em;
+}
+
+#home-bottom.trial .home-big-link .image .cover {
+    min-width: 8em;
+    min-height: 8em;
+    background: url(../images/blank.jpg) no-repeat center center;
+    background-size: cover;
 }
 

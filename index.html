@@ -188,9 +188,9 @@
                                 </div>
                             </div>
 
-                            <div class="row trial" id="home-bottom" data-equalizer data-equalize-on="medium">
+                            <div class="row trial" id="home-bottom" data-equalizer="home-bottom-columns" data-equalize-on="medium">
                                 <div class="small-12 medium-6 large-7 columns" id="home-left">
-                                    <div data-equalizer-watch>
+                                    <div data-equalizer-watch="home-bottom-columns">
                                         <div id="home-services">
                                             <div class="services-title">
                                                 <h2>Worship Schedule</h2>
@@ -228,11 +228,10 @@
                                     </div>
                                 </div>
                                 <div class="small-12 medium-6 large-5 columns" id="home-right">
-                                    <div data-equalizer-watch>
+                                    <div data-equalizer-watch="home-bottom-columns">
                                         <div id="home-angelus">
                                             <div class="angelus-title">
                                                 <h2>The Angelus</h2>
-                                                <p class="tagline">The Weekly Newsletter of Saint Mary's</p>
                                             </div>
                                             <div class="angelus-body">
                                                 <h4>Volume 18, Number 17, March 13, 2016</h4>
@@ -240,25 +239,22 @@
                                                 <p>Only once in the seventeen years I have been at Saint Mary’s have we been unable to process through Times Square on Palm Sunday. The usual worry is rain. This year, as I write on Friday, March 18, snow is forecast for the afternoon and evening. I have a hunch that it will be all right—and a memorable start to Holy Week. The focus of our worship on Sunday, of course, is not the Liturgy of the Palms. It’s the Eucharist and the proclamation of the passion, this year, from Luke.</p>
                                                 <div class="read-more"><a href="#">Read More</a></div>
                                                 <div class="signup">
-                                                    <h5>Sign up for the Angelus:</h5>
-                                                    <form method="post" action="#">
-                                                        <input type="text" name="email" placeholder="Email address" />
-                                                        <button type="submit" class="button">Sign Up</button>
-                                                    </form>
+                                                    <p>The Angelus is the weekly newsletter of Saint Mary's. You can receive it by email every Friday.</p>
+                                                    <a href="" class="button">Sign Up</a>
                                                 </div>
                                             </div>
                                         </div>
 
                                         <div class="row" id="home-big-links">
                                             <div class="small-12 columns">
-                                                <div class="row column home-big-link">
+                                                <div class="row column home-big-link" data-equalizer="big-links" data-equalize-on="small">
                                                     <a href="#">
-                                                        <div class="small-6 columns text">
+                                                        <div class="small-6 columns text" data-equalizer-watch="big-links">
                                                             <h3>Open Doors:</h3>
                                                             <p class="tagline">The Campaign for the Church of Saint Mary the Virgin</p>
                                                         </div>
                                                         <div class="small-6 columns image">
-                                                            <img src="inc/site/images/open-doors.jpg" />
+                                                            <div class="cover" data-equalizer-watch="big-links" style="background-image: url(inc/site/images/open-doors.jpg)"></div>
                                                         </div>
                                                     </a>
                                                 </div>
