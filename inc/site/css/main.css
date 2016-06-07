@@ -564,6 +564,12 @@ body.dark-interior #main h3 {
     background: #6e6b58;
 }
 
+@media screen and (max-width: 39.9375em) {
+    #home-bottom.trial #home-angelus {
+        margin-top: 0;
+    }
+}
+
 #home-bottom.trial #home-services .services-title,
 #home-bottom.trial #home-angelus .angelus-title {
     position: relative;
@@ -643,6 +649,7 @@ body.dark-interior #main h3 {
     background: #3f5a7f;
     color: #fff;
     min-height: 8em;
+    margin-bottom: 0.5em;
 }
 
 #home-bottom.trial .home-big-link a {
@@ -658,5 +665,15 @@ body.dark-interior #main h3 {
     min-height: 8em;
     background: url(../images/blank.jpg) no-repeat center center;
     background-size: cover;
+}
+
+#home-bottom.trial .focus .columns {
+    padding-top: 0.5em;
+}
+
+@media screen and (max-width: 39.9375em) {
+    #home-bottom.trial .focus .columns p {
+        margin-right: 95px;
+    }
 }
 
