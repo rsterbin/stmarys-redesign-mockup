@@ -189,7 +189,7 @@ body.default-interior #main {
 }
 
 #home-bottom {
-    background: #fff7d8 url("../images/bottom-box-bg.jpg") no-repeat scroll right bottom;
+    background: #fff7d8;
 }
 
 @media screen and (min-width: 40em) {
@@ -667,13 +667,6 @@ body.dark-interior #main h3 {
     background-size: cover;
 }
 
-#home-bottom.trial .focus .columns {
-    padding-top: 0.5em;
-}
-
-@media screen and (max-width: 39.9375em) {
-    #home-bottom.trial .focus .columns p {
-        margin-right: 95px;
-    }
-}
-
+#home-bottom.trial .focus .image {
+    text-align: center;
+    padding: 0;
