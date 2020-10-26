@@ -188,6 +188,25 @@ body.default-interior #main {
     color: #fff;
 }
 
+#home-alert {
+    background: #f4f1e1;
+    color: #090a0c;
+    padding: 1em;
+    margin: 1em;
+    text-align: center;
+}
+
+#home-alert .inner {
+    border: 0.025em solid #090a0c;
+    padding: 1em 1em 0 1em;
+}
+
+#home-alert h3 {
+    font-weight: bold;
+    font-size: 1.875em;
+    font-variant: small-caps;
+}
+
 @media screen and (min-width: 40em) {
     #home-left {
         padding-right: 0.625rem;
@@ -496,19 +515,26 @@ body.default-interior #main {
 #main h1,
 #main h2 {
     font-weight: bold;
-    text-transform: uppercase;
     color: #49545f;
-    text-shadow: -1px -1px 1px #f3ecc9, 1px 1px 1.25px #000;
     margin: 1em 0 0.5em 0;
     text-align: center;
 }
 
 #main h1 {
     font-size: 2.125em;
+    font-variant: small-caps;
+    text-shadow: -1px -1px 1px #f3ecc9, 1px 1px 1.25px #000;
 }
 
 #main h2 {
     font-size: 1.875em;
+    font-variant: small-caps;
+    text-shadow: -1px -1px 1px #f3ecc9, 1px 1px 1.25px #666;
+}
+
+#main h3 {
+    font-size: 1.5em;
+    font-variant: small-caps;
 }
 
 #main h1 a,
