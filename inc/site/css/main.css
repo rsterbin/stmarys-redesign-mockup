@@ -555,6 +555,24 @@ body.default-interior #main {
     font-style: italic;
 }
 
+#main .accordion {
+    border-color: #c4bfa3;
+    background: #fff7d8;
+}
+
+#main .accordion-title {
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#main .accordion-title:hover {
+    background: inherit;
+}
+
+#main .accordion-content {
+    background: #fffcf2;
+}
 
 body.dark-interior #main {
     background: #27384a;
