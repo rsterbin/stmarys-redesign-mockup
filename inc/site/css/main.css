@@ -668,6 +668,12 @@ body.dark-interior #main .button:hover {
     color: #121e2c;
 }
 
+#main #giving-box-frame {
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    width: 50%;
+    float: right;
+}
+
 body.dark-interior #main #giving-box {
     background: #f3ecc9;
     color: #090a0c;
@@ -710,19 +716,20 @@ body.dark-interior #main #giving-box a.button:hover {
     display: block;
 }
 
-#main #testimonies {
-    overflow: auto;
-}
-
-#main #testimonies .testimony {
+#main .testimonials .testimony {
     display: inline-block;
-    max-width: 20rem;
     vertical-align: top;
     padding: 0.5rem;
 }
 
-#main #testimonies .thumbnail {
+#main .testimonials .thumbnail {
     float: left;
     margin-right: 1rem;
-    max-width: 8rem;
+    max-width: 10rem;
 }
+
+#main .testimonials .attribution {
+    font-style: italic;
+    color: #27384a;
+}
+
