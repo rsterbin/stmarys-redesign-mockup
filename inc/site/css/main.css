@@ -550,8 +550,9 @@ body.default-interior #main {
 }
 
 #main h3 {
-    font-size: 1.5em;
-    font-variant: small-caps;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #27384a;
 }
 
 #main h1 a,
@@ -570,12 +571,6 @@ body.default-interior #main {
 #main blockquote, #main blockquote p {
     color: #444c5b;
     font-style: italic;
-}
-
-#main p.highlighted {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #27384a;
 }
 
 #main .accordion {
@@ -623,7 +618,7 @@ body.dark-interior #main a:active {
     color: #fff;
 }
 
-body.dark-interior #main p.highlighted {
+body.dark-interior #main h3 {
     color: #fde2a9;
 }
 
