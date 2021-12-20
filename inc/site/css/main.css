@@ -653,13 +653,13 @@ body.dark-interior #main .button:hover {
     color: #fff;
 }
 
-#main #giving-box a.button {
+#main #giving-box .button {
     background-color: #f3ecc9;
     color: #121e2c;
     font-weight: bold;
 }
 
-#main #giving-box a.button:hover {
+#main #giving-box .button:hover {
     color: #121e2c;
 }
 
@@ -682,13 +682,13 @@ body.dark-interior #main #giving-box :active {
     color: #ffdb91;
 }
 
-body.dark-interior #main #giving-box a.button {
+body.dark-interior #main #giving-box .button {
     color: #f6dda9;
     border-color: #484647;
     background-color: #121e2c;
 }
 
-body.dark-interior #main #giving-box a.button:hover {
+body.dark-interior #main #giving-box .button:hover {
     color: #ffdb91;
 }
 
