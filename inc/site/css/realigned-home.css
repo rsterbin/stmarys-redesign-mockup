@@ -1,0 +1,190 @@
+
+#row-middle {
+    height: 100%;
+}
+
+.homepage-block {
+    padding: 1em;
+}
+
+.homepage-middle-column {
+    padding: 1em;
+}
+
+#home-services {
+    height: 100%;
+}
+
+#main {
+    background-color: #2c4561;
+}
+
+/* Alert */
+
+#home-alert {
+    background: #f4f1e1;
+    color: #090a0c;
+    padding: 1em;
+    text-align: center;
+}
+
+.realigned-home #home-alert {
+    margin: 0;
+}
+
+#home-alert .inner {
+    border: 0.025em solid #090a0c;
+    padding: 1em 1em 0 1em;
+}
+
+#home-alert h2 {
+    text-shadow: none;
+    margin: 0 0 0.5rem;
+    font-size: 1.75rem;
+}
+
+#home-alert h3 {
+    font-variant: small-caps;
+    font-size: 1.25rem;
+}
+
+#home-alert p {
+    font-weight: bold;
+    font-style: italic;
+}
+
+#home-alert.inactive {
+    display: none;
+}
+#home-alert.active {
+    display: block;
+}
+body.sqs-edit-mode #home-alert.inactive {
+    display: block;
+}
+
+body.sqs-edit-mode #home-alert .inner:before {
+    content: "This section will disappear if you leave it empty";
+}
+
+/* Services */
+
+#column-middle-left {
+    background: #4a6e92;
+    color: #fff;
+}
+
+#home-services {
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+#home-services .services-body {
+    padding: 1em;
+}
+
+#main #home-services h2 {
+    font-weight: bold;
+    font-size: 1.875em;
+    font-variant: small-caps;
+    text-shadow: none;
+    color: #fff;
+    margin-top: 0;
+}
+
+#main #home-services h3 {
+    font-size: 1.125em;
+    font-weight: bold;
+    color: #fff;
+}
+
+#main #home-services a, #main #home-services a:hover,
+#main #angelus a, #main #angelus a:hover {
+    color: #fff;
+}
+
+#main #home-services blockquote {
+    color: #fff;
+    padding: 0;
+}
+
+#main #home-services blockquote a {
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+/* Slideshow and Angelus */
+
+#column-middle-right {
+    background-color: #67605a;
+    color: white;
+    padding: 0;
+}
+
+#slideshow-cell {
+    padding-bottom: 1em;
+    background-color: #2c4561;
+}
+
+#angelus .angelus-title {
+    background: #534e4a;
+    padding: 1em;
+}
+
+#angelus .angelus-title h2 {
+    color: #fff;
+    font-variant: small-caps;
+    line-height: 1em;
+    margin: 0;
+    padding: 0;
+    text-shadow: none;
+    text-transform: none;
+}
+
+#angelus .angelus-body {
+    padding: 1em;
+}
+
+#angelus .angelus-body .tmp-angelus-summary-container h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+#angelus .angelus-after {
+    margin-top: 1.5rem;
+}
+
+#angelus .angelus-after p {
+    font-style: italic;
+}
+
+#angelus .angelus-after .button {
+    display: block;
+    margin: 1rem auto;
+}
+
+/* Welcome message */
+
+#welcome-message {
+    color: #eddfc9;
+    font-style: italic;
+}
+
+/* Top footer */
+
+#top-footer {
+    padding-top: 1rem;
+}
+
+#top-footer h3 {
+    color: #fce5c0;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#top-footer a:link, #top-footer a:visited, #top-footer a:hover, #top-footer a:active {
+    color: #fff;
+}
+
